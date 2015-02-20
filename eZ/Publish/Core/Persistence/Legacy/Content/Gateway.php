@@ -396,5 +396,5 @@ abstract class Gateway
      *
      * @return int[]
      */
-    abstract public function getContentIdsByType( $contentTypeId );
+    abstract public function getContentIdsByContentTypeId( $contentTypeId );
 }

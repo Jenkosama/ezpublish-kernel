@@ -1828,7 +1828,7 @@ class DoctrineDatabase extends Gateway
      *
      * @return int[]
      */
-    public function getContentIdsByType( $contentTypeId )
+    public function getContentIdsByContentTypeId( $contentTypeId )
     {
         $query = $this->dbHandler->createSelectQuery();
         $query

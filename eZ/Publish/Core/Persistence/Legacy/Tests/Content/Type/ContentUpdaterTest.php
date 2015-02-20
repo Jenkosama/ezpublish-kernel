@@ -165,7 +165,7 @@ class ContentUpdaterTest extends PHPUnit_Framework_TestCase
 
         $this->getContentGatewayMock()
             ->expects( $this->once() )
-            ->method( 'getContentIdsByType' )
+            ->method( 'getContentIdsByContentTypeId' )
             ->with( 23 )
             ->will(
                 $this->returnValue( array( 11, 22 ) )

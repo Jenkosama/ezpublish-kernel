@@ -894,11 +894,11 @@ class ExceptionConversion extends Gateway
      *
      * @return int[]
      */
-    public function getContentIdsByType( $contentTypeId )
+    public function getContentIdsByContentTypeId( $contentTypeId )
     {
         try
         {
-            return $this->innerGateway->getContentIdsByType( $contentTypeId );
+            return $this->innerGateway->getContentIdsByContentTypeId( $contentTypeId );
         }
         catch ( DBALException $e )
         {

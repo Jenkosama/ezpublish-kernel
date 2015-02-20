@@ -147,7 +147,7 @@ class ContentUpdater
             return;
         }
 
-        foreach ( $this->getContentIdsByType( $contentTypeId ) as $contentId )
+        foreach ( $this->getContentIdsByContentTypeId( $contentTypeId ) as $contentId )
         {
             foreach ( $actions as $action )
             {
@@ -163,8 +163,8 @@ class ContentUpdater
      *
      * @return int[]
      */
-    protected function getContentIdsByType( $contentTypeId )
+    protected function getContentIdsByContentTypeId( $contentTypeId )
     {
-        return $this->contentGateway->getContentIdsByType( $contentTypeId );
+        return $this->contentGateway->getContentIdsByContentTypeId( $contentTypeId );
     }
 }
